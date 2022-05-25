@@ -1,0 +1,144 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{csquotes,xpatch}% recommended
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{epstopdf} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{calrsfs}
+\usepackage{physics}
+\usepackage{mathtools}  
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabulary}
+\usepackage{booktabs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\linespread{1.2}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={166mm,251mm},
+	left=22mm,
+	top=22mm,
+	headsep=.5in
+}
+\raggedbottom
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{blindtext}
+\usepackage{ragged2e}
+\usepackage{float}
+
+\usepackage{epstopdf}
+\usepackage{empheq} 
+
+\usepackage{array}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphics}
+\graphicspath{ {figures/} }
+\renewcommand{\listfigurename}{List of figures}
+
+\usepackage[labelfont=bf,justification=justified,singlelinecheck=false]{caption}
+\captionsetup[figure]{name=Fig. ,labelsep=period}
+\captionsetup[table]{labelsep=newline,font=footnotesize}
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Fig.},font=footnotesize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{comment}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{wrapfig}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newcommand{\hsp}{\hspace{5pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{subcaption}
+\usepackage{bbm}
+\usepackage{tabularx}
+
+\usepackage{indentfirst}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{subcaption}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{amsmath,amsthm}
+\usepackage{rotating}
+% \usepackage[subfigure]{tocloft}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\cH}{\pazocal{H}}
+\newcommand{\cN}{\pazocal{N}}
+\newcommand{\cP}{\pazocal{P}}
+\newcommand{\cD}{\pazocal{D}}
+\newcommand{\cO}{\pazocal{O}}
+\newcommand{\cL}{\pazocal{L}}
+
+\usepackage[ruled,vlined]{algorithm2e}
+\SetKwComment{Comment}{$\triangleright$\ }{}
+
+\usepackage{geometry}
+\usepackage{marginnote}
+
+\usepackage{dsfont}
+\usepackage{diagbox}
+
+\usepackage{multirow} 
+\usepackage{multicol}
+
+\usepackage[titletoc]{appendix}
+
+\usepackage{pdflscape}
+\usepackage{fancyhdr} 
+
+\fancypagestyle{mylandscape}{
+\fancyhf{} %Clears the header/footer
+\fancyfoot{% Footer
+\makebox[\textwidth][r]{% Right
+  \rlap{\hspace{.75cm}% Push out of margin by \footskip
+    \smash{% Remove vertical height
+      \raisebox{4.87in}{% Raise vertically
+        \rotatebox{90}{\thepage}}}}}}% Rotate counter-clockwise
+\renewcommand{\headrulewidth}{0pt}% No header rule
+\renewcommand{\footrulewidth}{0pt}% No footer rule
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[hyperfootnotes=false]{hyperref}
+
+\definecolor{mycolor}{RGB}{207,42,40}
+\hypersetup{
+	colorlinks
+}
+
+\AtBeginDocument{\hypersetup{citecolor=mycolor, linkcolor = mycolor}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{tocdepth}{2}
+
+\usepackage{etoc}
+\def\TOCverysmallvskip {0pt plus .2pt}
+
+% \usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\def\ps@pprintTitle{%
+  \let\@oddhead\@empty
+  \let\@evenhead\@empty
+  \let\@oddfoot\@empty
+  \let\@evenfoot\@oddfoot
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\interfootnotelinepenalty=10000
